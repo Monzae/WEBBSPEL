@@ -1,0 +1,37 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Player1Movement : MonoBehaviour {
+
+    public float speed;
+    public Vector2 jumpForce;
+    Rigidbody2D rigidBody2d;
+    public CurrentState currentState = CurrentState.OnGround;
+   
+	// Use this for initialization
+	void Start () {
+        this.rigidBody2d = this.gameObject.GetComponent<Rigidbody2D>();
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        Movement();
+	
+	}
+    private void Movement()
+    {
+        if (Input.GetKey("left"))
+        {
+            this.gameObject.transform.position -= transform.right * speed;
+        }
+        if (Input.GetKey("right"))
+        {
+            this.gameObject.transform.position += transform.right * speed;
+        }
+        if (Input.GetKey("up") && this.currentState == CurrentState.OnGround)
+        {
+            this.rigidBody2d.AddForce(this.jumpForce);
+            this.currentState = CurrentState.InAir;
+        }
+    }
+}
