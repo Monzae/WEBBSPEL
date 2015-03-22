@@ -1,0 +1,13 @@
+Requirement specification Offline Multiplayer
+
+2 players on the playfield
+Both players will have the ability to move and jump freely around the playfield.
+If players jump outside the playfield they “die”
+When players “die” they re-spawn on a randomly chosen spawn point
+If a player jumps on the other players head the bottom player dies.
+A player can only jump once, however a player can jump again after landing on a players head.
+Score
+If a player dies by falling out of the map the player loses 1 point.
+If a player kills another player, the killing player is awarded 1 point, killed player loses no points.
+Score is drawn on a GUI
+If a certain score is reached by one of the players, the game ends and the player that achieved the target score wins the game.
