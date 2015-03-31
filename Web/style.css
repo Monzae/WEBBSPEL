@@ -43,17 +43,13 @@
 				float: left;
 			}
 			
-			#footer{
-				border-top:1px solid #999;
-				text-align:center;
-			}
-
-			
 
 			#footer{
 				border-top:1px solid #999;
+				border-width: 400px;
 				text-align:center;
 				clear: both;
+
 			}
 
 			#wrapper{
