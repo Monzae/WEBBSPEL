@@ -1,5 +1,12 @@
 
 			
+			#nav{
+				
+				
+
+			} 
+
+
 			#nav a {
 				display: block;
 				width: 100%;
@@ -23,6 +30,7 @@
 				padding:0px 20px;
 				list-style: none;
 
+
 			}
 
 			#nav ul li{
@@ -38,43 +46,7 @@
 				text-align:center;
 			}
 
-			#nav ul #start a{
-				background-color: #B70000;
-				color: #FFFFFF;
-
-			}
-
-			#nav ul .selected a{
-				background-color: #ACACAC;
-				color: #FFFFFF;
-
-			}
-
-			#nav ul .selected2 a{
-				background-color: #E6E6E6;
-			}
-
-		
-
-			 h3, h4 {
-				margin-bottom: 2px;
-
-
-			}
-
-			p.italic {
-				font-style: italic;
-
-			}
-
-			p.film {
-				margin-top: 2px;
-			}
-
-			header a {
-				text-decoration: none;
-
-			}
+			
 
 			#footer{
 				border-top:1px solid #999;
@@ -90,6 +62,11 @@
 				background-color:#fff;
 				
 				margin-top: 40px;
+			}
+
+			main{
+				clear: both;
+				text-align: center;
 			}
 
 
