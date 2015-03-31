@@ -1,0 +1,59 @@
+body{
+	background-color: blue;
+	font-family: helvetica;
+}
+
+
+header{
+	margin: auto;
+	height: 30%;
+	/*
+	background-image: url("bild.jpg");
+	*/
+	
+	
+}    
+#wrapper {
+
+	width:60%;
+	margin: auto;
+	padding:10%;
+	height: 80%;
+
+	background-color: white;	
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+	display: inline;
+}
+
+nav ul li a {
+    display: block;
+    width: 60px;
+    display: inline;
+}
+
+nav ul li a:hover{
+	background-color: #CFCFCF;
+
+}
+
+/*
+ul li a:hover {
+	color: #420000;
+}
+
+ul li ul {
+	
+}
+
+ul li ul a{
+	padding: 10px 5px 10px 35px;
+	font-size: 14px;
+}
+*/
