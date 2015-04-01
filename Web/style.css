@@ -1,14 +1,10 @@
 
-			
-			#nav{
-				clear: both;
+			header{
+				margin: auto;
+				height: 50px;
+				max-width: 800px;
 
-				
-				
-
-			} 
-
-
+			}
 			#nav a {
 				display: block;
 				width: 100%;
@@ -19,6 +15,7 @@
 				font-weight: bold;
 				padding: 10px 15px;
 				color: red;
+
 			}
 
 			#nav a:hover {
@@ -32,12 +29,9 @@
 				padding:0px 20px;
 				list-style: none;
 
-
 			}
 
 			#nav ul li{
-
-				text-align: center;
 				font-size: 17px;
 				display: inline;
 				float: left;
@@ -45,8 +39,7 @@
 			
 
 			#footer{
-				border-top:1px solid #999;
-				border-width: 400px;
+				border-top:2px solid #999;
 				text-align:center;
 				clear: both;
 
