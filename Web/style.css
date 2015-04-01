@@ -1,7 +1,9 @@
 
 			
-			#nav{
+			header{
 				clear: both;
+				width: 100%;
+				height: 50px;
 
 				
 				
@@ -19,6 +21,7 @@
 				font-weight: bold;
 				padding: 10px 15px;
 				color: black;
+
 			}
 
 			#nav a:hover {
@@ -40,13 +43,15 @@
 				text-align: center;
 				font-size: 17px;
 				display: inline;
+				margin: auto;
 				float: left;
+
+				
 			}
 			
 
 			#footer{
 				border-top:1px solid #999;
-				border-width: 400px;
 				text-align:center;
 				clear: both;
 
