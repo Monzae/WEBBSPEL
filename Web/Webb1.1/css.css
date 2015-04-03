@@ -1,8 +1,5 @@
 	#wrapper{
 		font-family: helvetica;
-	
-
-
 	}
 
 
@@ -10,13 +7,15 @@
 		width:100%;
 		margin: auto;
 		background-color: pink;
+
 	}
+
 
 	nav{
 		text-align: center;
-
 	}
 
+	
 	ul{
     list-style-type: none;
     display: inline-block;
@@ -24,9 +23,22 @@
     overflow: hidden;
 	}
 
+
 	li { 
-    float: left;
-}
+    	float: left;
+    }
+
+
+	a {
+		float: left;
+	}
+
+
+	#logo{
+		padding-left: 25px;
+		padding-right: 25px;
+
+	}
 
 	a:link, a:visited {
     display: block;
