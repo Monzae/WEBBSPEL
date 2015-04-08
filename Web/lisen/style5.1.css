@@ -1,0 +1,89 @@
+
+body {
+	
+	background-image: url("pokemon.jpg");
+}
+
+#wrapper {
+	width:100%;
+	height: 900px;
+}
+
+header{
+	clear: both;
+	width: 100%;
+	height: 120px;
+	background-position:center;
+}
+
+nav {
+	text-align: center;
+	margin: auto;
+	height: 120px;
+	width: 90%;
+	border-bottom: 3px solid;
+	
+}
+
+.logo {
+    display: inline-block;
+	vertical-align: top;
+	width:120px;
+	height: 110px;
+	padding: 20px;
+}
+
+ul {
+	font-family: helvetica;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+}
+
+li { 
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 4px;
+    margin: 0, auto;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+}
+
+#main {
+	margin: auto;
+	padding-top: 10px;
+	height: 600px;
+	width: 90%;
+}
+#spel{
+	margin: auto;
+	height: 600px;
+	width: 900px;
+	background-image: url("jump.png");
+	background-repeat: repeat-y;
+}
+
+footer{
+	margin:auto;
+	text-align: center;
+	width:60%;
+	clear: both;
+	border-top: 3px solid;
+	padding: 20px;
+}
