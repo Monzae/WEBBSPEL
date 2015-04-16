@@ -1,9 +1,0 @@
-Stats
-K/D ratio
-Kills per minute
-Kills per round
-Kills per match
-
-Match
-Rounds
-Time
