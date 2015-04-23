@@ -14,29 +14,30 @@ function Start () {
 	animator = GetComponent.<Animator>();
 }
 
-function Update () {
+function FixedUpdate()	{
 	grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+}
 
-	Animation();
+function Update () {
+	Animator();
 	
 	Movement();
 }
 
 function Movement()	{
+	if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)	{
+		Jump();
+	}
 	
-		if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)	{
-			Jump();
-		}
-		
-		if (Input.GetKey(KeyCode.LeftArrow))	{
-			playerVelocity.Set(-moveSpeed, GetComponent.<Rigidbody2D>().velocity.y);
-			GetComponent.<Rigidbody2D>().velocity = playerVelocity;
-		}
-		
-		if (Input.GetKey(KeyCode.RightArrow))	{
-			playerVelocity.Set(moveSpeed, GetComponent.<Rigidbody2D>().velocity.y);
-			GetComponent.<Rigidbody2D>().velocity = playerVelocity;
-		}
+	if (Input.GetKey(KeyCode.LeftArrow))	{
+		playerVelocity.Set(-moveSpeed, GetComponent.<Rigidbody2D>().velocity.y);
+		GetComponent.<Rigidbody2D>().velocity = playerVelocity;
+	}
+	
+	if (Input.GetKey(KeyCode.RightArrow))	{
+		playerVelocity.Set(moveSpeed, GetComponent.<Rigidbody2D>().velocity.y);
+		GetComponent.<Rigidbody2D>().velocity = playerVelocity;
+	}
 }
 
 function Jump()	{
@@ -44,13 +45,13 @@ function Jump()	{
 	GetComponent.<Rigidbody2D>().velocity = playerVelocity;
 }
 
-function Animation()	{
+function Animator()	{
 	animator.SetBool("Grounded", grounded);
 	
 	animator.SetFloat("Speed", Mathf.Abs(GetComponent.<Rigidbody2D>().velocity.x));
 	
 	if (playerVelocity.x > 0)
-	transform.localScale = new Vector3 (1f, 1f, 1f);
+		transform.localScale = new Vector3 (1f, 1f, 1f);
 	
 	else if (playerVelocity.x < 0)
 		transform.localScale = new Vector3 (-1f, 1f, 1f);

@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Player1Behaviour.js">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="D:\Unity-projects\2D-platform\Assets\Script\playerController.js">
     <Files>
-      <File FileName="Assets\Script\Player1Behaviour.js" Line="21" Column="2" />
-      <File FileName="D:\Unity-projects\2D-platform\Assets\Script\playerController.js" Line="36" Column="1" />
+      <File FileName="D:\Unity-projects\2D-platform\Assets\Script\playerController.js" Line="6" Column="37" />
+      <File FileName="Assets\Script\Player1Behaviour.js" Line="13" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
