@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="D:\Unity-projects\2D-platform\Assets\Script\playerController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ChangeScene.js">
     <Files>
-      <File FileName="D:\Unity-projects\2D-platform\Assets\Script\playerController.js" Line="6" Column="37" />
-      <File FileName="Assets\Script\Player1Behaviour.js" Line="13" Column="20" />
+      <File FileName="Assets\Script\SetSpriteNumber2.js" Line="13" Column="2" />
+      <File FileName="Assets\Script\ChangeScene.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

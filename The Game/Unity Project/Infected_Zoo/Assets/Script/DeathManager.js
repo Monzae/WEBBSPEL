@@ -3,35 +3,28 @@
 public var levelManager : LevelManager;
 public var secondsToWait : float;
 
-private var checkpoints : GameObject[];
 private var randomNumber : int;
+private var secondsToBlink : float;
 private var playerVelocity : Vector2;
+private var checkpoints : GameObject[];
 private var renderParent : Renderer;
 private var headCollider : CircleCollider2D;
-private var secondsToBlink : float;
+private var player : PlayerBehaviour;
 
 function Start () {
-	playerVelocity.Set(0, 0);
 	renderParent = GetComponentInParent.<Renderer>();
 	headCollider = GetComponent.<CircleCollider2D>();
+	player = GetComponentInParent.<PlayerBehaviour>();
 	
-	secondsToBlink = secondsToWait / 5;
+	secondsToBlink = secondsToWait / 10;
+	playerVelocity.Set(0, 0);
 }
 
 function Update () {
-	
 }
 
 function OnTriggerEnter2D(other : Collider2D)	{
-	if (other.gameObject.tag == "Feet") {
-		RespawnPlayer();
-		
-		Debug.Log("Death");
-	}
-}
-
-function OnTriggerStay2D (other : Collider2D)	{
-	if (other.gameObject.tag == "Feet")	{
+	if (other.gameObject.tag == "Feet" || other.gameObject.tag == "Void") {
 		RespawnPlayer();
 	}
 }
@@ -40,6 +33,8 @@ public function RespawnPlayer() {
 	RandomSpawn();
 	BlinkingTexture();
 	Immortality(secondsToWait);
+	
+	player.isInfected = false;
 }
 
 function RandomSpawn()	{

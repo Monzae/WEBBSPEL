@@ -1,13 +1,11 @@
 ﻿#pragma strict
 var playerVelocity : Vector2;
 
-//private var player : PlayerBehaviour;
 private var checkpoints : GameObject[];
 private var randomNumber : int;
 
 
 function Start () {
-	//player = FindObjectOfType(PlayerBehaviour);
 	playerVelocity.Set(0, 0);
 }
 
