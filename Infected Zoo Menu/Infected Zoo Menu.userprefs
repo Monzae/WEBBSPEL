@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\Dropbox\Infected Zoo\Infected Zoo - The Game\Infected_Zoo\Assets\Script\SetSpriteNumber2.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LoadOnClick.cs">
     <Files>
-      <File FileName="..\..\..\..\Dropbox\Infected Zoo\Infected Zoo - The Game\Infected_Zoo\Assets\Script\ChangeSprite1.js" Line="1" Column="1" />
-      <File FileName="..\..\..\..\Dropbox\Infected Zoo\Infected Zoo - The Game\Infected_Zoo\Assets\Script\SetSpriteNumber1.js" Line="30" Column="24" />
-      <File FileName="..\..\..\..\Dropbox\Infected Zoo\Infected Zoo - The Game\Infected_Zoo\Assets\Script\SetSpriteNumber2.js" Line="1" Column="1" />
+      <File FileName="Assets\LoadOnClick.cs" Line="12" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
