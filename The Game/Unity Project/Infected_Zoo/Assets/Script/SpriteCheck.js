@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var red : Color;
+private var pink : Color;
 private var white : Color;
 private var setSpriteNumber1 : SetSpriteNumber1;
 private var setSpriteNumber2 : SetSpriteNumber2;
@@ -13,7 +13,7 @@ function Start () {
 	setSpriteNumber2 = FindObjectOfType.<SetSpriteNumber2>();
 	characterSelects = GameObject.FindGameObjectsWithTag("CharacterSelect");
 	
-	red = Color(1.0f, 0f, 0f);
+	pink = Color(1f, 0.2f, 0.2f);
 	white = Color(1.0f, 1.0f,1.0f);
 }
 
@@ -24,7 +24,7 @@ function Update () {
 function Checker ()	{
 	if (setSpriteNumber1.spriteNumber == setSpriteNumber2.spriteNumber)	{
 		for (var i = 0; i < characterSelects.Length; i++)	{
-			characterSelects[i].GetComponent.<UnityEngine.UI.Image>().color = red;
+			characterSelects[i].GetComponent.<UnityEngine.UI.Image>().color = pink;
 		}
 	}
 	

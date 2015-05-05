@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ChangeScene.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ChangeSprite1.js">
     <Files>
-      <File FileName="Assets\Script\SetSpriteNumber2.js" Line="13" Column="2" />
-      <File FileName="Assets\Script\ChangeScene.js" Line="1" Column="1" />
+      <File FileName="Assets\Script\ChangeSprite1.js" Line="27" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

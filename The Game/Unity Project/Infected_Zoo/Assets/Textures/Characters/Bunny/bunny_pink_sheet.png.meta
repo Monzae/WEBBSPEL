@@ -1,21 +1,21 @@
 fileFormatVersion: 2
 guid: 2e38d067b6a3cfa47bf0da07fee16bce
-timeCreated: 1429532757
+timeCreated: 1430819100
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bunny_pink_idle_0
-    21300002: bunny_pink_idle_1
-    21300004: bunny_pink_idle_2
-    21300006: bunny_pink_idle_3
-    21300008: bunny_pink_jumping_0
-    21300010: bunny_pink_jumping_1
-    21300012: bunny_pink_jumping_2
-    21300014: bunny_pink_jumping_3
-    21300016: bunny_pink_walking_0
-    21300018: bunny_pink_walking_1
-    21300020: bunny_pink_walking_2
-    21300022: bunny_pink_walking_3
+    21300000: bunnyPinkIdle0
+    21300002: bunnyPinkIdle1
+    21300004: bunnyPinkIdle2
+    21300006: bunnyPinkIdle3
+    21300008: bunnyPinkJumping0
+    21300010: bunnyPinkJumping1
+    21300012: bunnyPinkJumping2
+    21300014: bunnyPinkJumping3
+    21300016: bunnyPinkWalking0
+    21300018: bunnyPinkWalking1
+    21300020: bunnyPinkWalking2
+    21300022: bunnyPinkWalking3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,7 +61,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: bunny_pink_idle_0
+    - name: bunnyPinkIdle0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +71,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_idle_1
+    - name: bunnyPinkIdle1
       rect:
         serializedVersion: 2
         x: 32
@@ -81,7 +81,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_idle_2
+    - name: bunnyPinkIdle2
       rect:
         serializedVersion: 2
         x: 64
@@ -91,7 +91,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_idle_3
+    - name: bunnyPinkIdle3
       rect:
         serializedVersion: 2
         x: 96
@@ -101,7 +101,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_jumping_0
+    - name: bunnyPinkJumping0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,7 +111,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_jumping_1
+    - name: bunnyPinkJumping1
       rect:
         serializedVersion: 2
         x: 32
@@ -121,7 +121,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_jumping_2
+    - name: bunnyPinkJumping2
       rect:
         serializedVersion: 2
         x: 64
@@ -131,7 +131,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_jumping_3
+    - name: bunnyPinkJumping3
       rect:
         serializedVersion: 2
         x: 96
@@ -141,7 +141,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_walking_0
+    - name: bunnyPinkWalking0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,7 +151,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_walking_1
+    - name: bunnyPinkWalking1
       rect:
         serializedVersion: 2
         x: 32
@@ -161,7 +161,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_walking_2
+    - name: bunnyPinkWalking2
       rect:
         serializedVersion: 2
         x: 64
@@ -171,7 +171,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_pink_walking_3
+    - name: bunnyPinkWalking3
       rect:
         serializedVersion: 2
         x: 96

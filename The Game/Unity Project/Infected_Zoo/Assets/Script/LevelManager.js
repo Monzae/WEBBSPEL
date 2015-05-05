@@ -4,7 +4,6 @@ var playerVelocity : Vector2;
 private var checkpoints : GameObject[];
 private var randomNumber : int;
 
-
 function Start () {
 	playerVelocity.Set(0, 0);
 }

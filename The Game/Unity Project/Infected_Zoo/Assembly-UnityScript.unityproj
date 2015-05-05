@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -52,8 +52,7 @@
      <Compile Include="Assets\Script\DeathManager.js" />
      <Compile Include="Assets\Script\LevelManager.js" />
      <Compile Include="Assets\Script\MatchTime.js" />
-     <Compile Include="Assets\Script\Player1Behaviour.js" />
-     <Compile Include="Assets\Script\Player2Behaviour.js" />
+     <Compile Include="Assets\Script\NameChange.js" />
      <Compile Include="Assets\Script\PlayerBehaviour.js" />
      <Compile Include="Assets\Script\ScoreManager.js" />
      <Compile Include="Assets\Script\ScoreWriter.js" />
@@ -62,8 +61,9 @@
      <Compile Include="Assets\Script\SpriteCheck.js" />
      <Compile Include="Assets\Script\VirusBehaviour.js" />
      <Compile Include="Assets\Script\VirusText.js" />
+     <Compile Include="Assets\SetAnimator.js" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

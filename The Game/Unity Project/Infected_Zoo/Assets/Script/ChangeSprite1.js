@@ -5,6 +5,7 @@ public var bunnySprite : Sprite;
 public var foxSprite : Sprite;
 
 public static var sprites : Sprite[];
+public static var currentSprite : String;
 
 private var setSpriteNumber : SetSpriteNumber1;
 
@@ -20,4 +21,8 @@ function Update () {
 
 function SwitchSprite ()	{
 	gameObject.GetComponentInParent.<UnityEngine.UI.Image>().sprite = sprites[setSpriteNumber.spriteNumber];
+	
+	currentSprite = sprites[setSpriteNumber.spriteNumber].ToString();
+	
+	Debug.Log(currentSprite);
 }

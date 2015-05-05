@@ -16,11 +16,11 @@ function Update () {
 
 function SpriteNumberCheck ()	{
 	if (spriteNumber < 0)	{
-		spriteNumber = 0;
+		spriteNumber = changeSprite.sprites.Length - 1;
 	}
 	
 	if (spriteNumber > (changeSprite.sprites.Length - 1))	{
-		spriteNumber = changeSprite.sprites.Length - 1;
+		spriteNumber = 0;
 	}
 }
 

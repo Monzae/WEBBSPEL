@@ -1,21 +1,21 @@
 fileFormatVersion: 2
 guid: 4dd7b1956fbba0d42bcdbc1e8e2c5505
-timeCreated: 1429178707
+timeCreated: 1430819258
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fox_idle_0
-    21300002: fox_sheet_0
-    21300004: fox_sheet_1
-    21300006: fox_sheet_2
-    21300008: fox_sheet_3
-    21300010: fox_sheet_4
-    21300012: fox_sheet_5
-    21300014: fox_sheet_6
-    21300016: fox_sheet_7
-    21300018: fox_sheet_8
-    21300020: fox_sheet_9
-    21300022: fox_sheet_10
+    21300000: foxIdle0
+    21300002: foxIdle1
+    21300004: foxIdle2
+    21300006: foxIdle3
+    21300008: foxJumping0
+    21300010: foxJumping1
+    21300012: foxJumping2
+    21300014: foxJumping3
+    21300016: foxWalking0
+    21300018: foxWalking1
+    21300020: foxWalking2
+    21300022: foxWalking3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,7 +61,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: fox_idle_0
+    - name: foxIdle0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +71,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_0
+    - name: foxIdle1
       rect:
         serializedVersion: 2
         x: 32
@@ -81,7 +81,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_1
+    - name: foxIdle2
       rect:
         serializedVersion: 2
         x: 64
@@ -91,7 +91,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_2
+    - name: foxIdle3
       rect:
         serializedVersion: 2
         x: 96
@@ -101,7 +101,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_3
+    - name: foxJumping0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,7 +111,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_4
+    - name: foxJumping1
       rect:
         serializedVersion: 2
         x: 32
@@ -121,7 +121,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_5
+    - name: foxJumping2
       rect:
         serializedVersion: 2
         x: 64
@@ -131,7 +131,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_6
+    - name: foxJumping3
       rect:
         serializedVersion: 2
         x: 96
@@ -141,7 +141,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_7
+    - name: foxWalking0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,7 +151,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_8
+    - name: foxWalking1
       rect:
         serializedVersion: 2
         x: 32
@@ -161,7 +161,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_9
+    - name: foxWalking2
       rect:
         serializedVersion: 2
         x: 64
@@ -171,7 +171,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: fox_sheet_10
+    - name: foxWalking3
       rect:
         serializedVersion: 2
         x: 96
