@@ -19,7 +19,7 @@ header{
 nav {
 	text-align: center;
 	margin: auto;
-	height: 120px;
+	height: 130px;
 	width: 90%;
 	border-bottom: 3px solid;
 	
@@ -28,8 +28,8 @@ nav {
 .logo {
     display: inline-block;
 	vertical-align: top;
-	width:120px;
-	height: 110px;
+	width:100px;
+	height: 100px;
 	padding: 20px;
 }
 
@@ -66,9 +66,8 @@ a:hover, a:active {
 }
 
 #main {
-	margin: auto;
-	padding-top: 10px;
-	height: 600px;
+	padding-top: 30px;
+	height: 800px;
 	width: 90%;
 }
 #spel{
