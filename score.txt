@@ -1,9 +1,1 @@
-180934,Yowan
-56828,Lohan
-34535,Kidney
-23635,Iddey
-12455,Middey
-7667,Mo
-6453,Pilley
-5478,Palley
-4980,po
+180934,Yowan,56828,Lohan,34535,Kidney,23635,Iddey,12455,Middey,7667,Mo,6453,Pilley,5478,Palley,4980,po
