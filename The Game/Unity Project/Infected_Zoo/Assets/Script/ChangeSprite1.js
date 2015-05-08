@@ -23,6 +23,4 @@ function SwitchSprite ()	{
 	gameObject.GetComponentInParent.<UnityEngine.UI.Image>().sprite = sprites[setSpriteNumber.spriteNumber];
 	
 	currentSprite = sprites[setSpriteNumber.spriteNumber].ToString();
-	
-	Debug.Log(currentSprite);
 }

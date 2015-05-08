@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ChangeSprite1.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\DeathManager.js">
     <Files>
-      <File FileName="Assets\Script\ChangeSprite1.js" Line="27" Column="27" />
+      <File FileName="Assets\Script\DeathManager.js" Line="66" Column="50" />
+      <File FileName="Assets\Script\ObjectLabel.js" Line="32" Column="79" />
+      <File FileName="Assets\Script\FindPlayerName.js" Line="7" Column="47" />
+      <File FileName="Assets\Script\NameChange.js" Line="24" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

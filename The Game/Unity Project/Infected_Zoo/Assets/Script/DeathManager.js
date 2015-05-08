@@ -1,6 +1,5 @@
 ﻿#pragma strict
 
-public var levelManager : LevelManager;
 public var secondsToWait : float;
 
 private var randomNumber : int;
@@ -9,15 +8,19 @@ private var playerVelocity : Vector2;
 private var checkpoints : GameObject[];
 private var renderParent : Renderer;
 private var headCollider : CircleCollider2D;
-private var player : PlayerBehaviour;
+private var playerBehaviour : PlayerBehaviour;
+private var findPlayerNameS : FindPlayerName[];
 
 function Start () {
 	renderParent = GetComponentInParent.<Renderer>();
 	headCollider = GetComponent.<CircleCollider2D>();
-	player = GetComponentInParent.<PlayerBehaviour>();
+	playerBehaviour = GetComponentInParent.<PlayerBehaviour>();
+	findPlayerNameS = FindObjectsOfType.<FindPlayerName>();
 	
 	secondsToBlink = secondsToWait / 10;
 	playerVelocity.Set(0, 0);
+	
+	BlinkingTexture ();
 }
 
 function Update () {
@@ -34,7 +37,7 @@ public function RespawnPlayer() {
 	BlinkingTexture();
 	Immortality(secondsToWait);
 	
-	player.isInfected = false;
+	playerBehaviour.isInfected = false;
 }
 
 function RandomSpawn()	{
@@ -47,6 +50,8 @@ function RandomSpawn()	{
 
 function BlinkingTexture()	{
 	for (var i = 0; i < 5; i++)	{
+		findPlayerNameS[playerBehaviour.playerNumber - 1].guiT.enabled = true;
+		
 		renderParent.enabled = true;
 		
 		yield WaitForSeconds(secondsToBlink);
@@ -58,6 +63,7 @@ function BlinkingTexture()	{
 	}
 	
 	renderParent.enabled = true;
+	findPlayerNameS[playerBehaviour.playerNumber - 1].guiT.enabled = false;
 }
 
 function Immortality(secondsToWait : float)	{
