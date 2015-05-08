@@ -55,6 +55,8 @@
      <Compile Include="Assets\Script\MatchTime.js" />
      <Compile Include="Assets\Script\NameChange.js" />
      <Compile Include="Assets\Script\ObjectLabel.js" />
+     <Compile Include="Assets\Script\Player1Behaviour.js" />
+     <Compile Include="Assets\Script\Player2Behaviour.js" />
      <Compile Include="Assets\Script\PlayerBehaviour.js" />
      <Compile Include="Assets\Script\ScoreManager.js" />
      <Compile Include="Assets\Script\ScoreWriter.js" />
@@ -63,6 +65,7 @@
      <Compile Include="Assets\Script\SpriteCheck.js" />
      <Compile Include="Assets\Script\VirusBehaviour.js" />
      <Compile Include="Assets\Script\VirusText.js" />
+     <Compile Include="Assets\SetAnimator.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
