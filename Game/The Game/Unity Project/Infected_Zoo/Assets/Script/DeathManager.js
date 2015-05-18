@@ -41,7 +41,7 @@ public function RespawnPlayer() {
 }
 
 function RandomSpawn()	{
-	checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+	checkpoints = GameObject.FindGameObjectsWithTag("CheckpointPlayer");
 	randomNumber = Random.Range(0, checkpoints.Length);
 	
 	GetComponentInParent.<Rigidbody2D>().velocity = playerVelocity;

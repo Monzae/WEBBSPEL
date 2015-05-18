@@ -2,6 +2,8 @@
 
 public var playerNumber : int;
 public var moveSpeed : float;
+public var infectedSpeed : float;
+public var infectedJumpHeight : float;
 public var jumpHeight : float;
 public var infectedDuration : float;
 public var groundCheckRadius : float;
@@ -9,8 +11,9 @@ public var isInfected : boolean;
 public var groundCheck : Transform;
 public var whatIsGround : LayerMask;
 
+private var virusNumber : int;
 private var infectedDurationStart : float;
-private var infectedSpeed : float;
+private var startJumpHeight : float;
 private var grounded : boolean;
 private var facingLeft : boolean;
 private var playerVelocity : Vector2;
@@ -20,12 +23,13 @@ private var virusBehaviour : VirusBehaviour;
 private var spriteSave : SpriteSave;
 
 function Start () {
+	startJumpHeight = jumpHeight;
+
 	animator = GetComponent.<Animator> ();
 	virusBehaviour = FindObjectOfType.<VirusBehaviour> ();
 	spriteSave = FindObjectOfType.<SpriteSave> ();
 	
 	infectedDurationStart = infectedDuration;
-	infectedSpeed = moveSpeed * 1.5f;
 	
 	SetAnimator ();
 }
@@ -49,13 +53,14 @@ function OnTriggerEnter2D(other : Collider2D)	{
 		virusBehaviour.isActive = false;
 		
 		AddVirusPoint ();
+		SetVirusNumber ();
 	}
 }
 
 function Movement ()	{
 	if (playerNumber == 1)	{
 		if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)	{
-			Jump ();
+			Jump (jumpHeight);
 		}
 		
 		if (Input.GetKey(KeyCode.LeftArrow))	{
@@ -71,7 +76,7 @@ function Movement ()	{
 	
 	if (playerNumber == 2)	{
 		if (Input.GetKeyDown(KeyCode.W) && grounded)	{
-			Jump ();
+			Jump (jumpHeight);
 		}
 		
 		if (Input.GetKey(KeyCode.A))	{
@@ -86,8 +91,8 @@ function Movement ()	{
 	}
 }
 
-function Jump ()	{
-	playerVelocity.Set(GetComponent.<Rigidbody2D> ().velocity.x, jumpHeight);
+function Jump (height : float)	{
+	playerVelocity.Set(GetComponent.<Rigidbody2D> ().velocity.x, height);
 	GetComponent.<Rigidbody2D> ().velocity = playerVelocity;
 }
 
@@ -115,14 +120,19 @@ function CharacterAnimation ()	{
 }
 
 function Infected ()	{
-	if (facingLeft)	{
-		playerVelocity.Set(-infectedSpeed, GetComponent.<Rigidbody2D> ().velocity.y);
-		GetComponent.<Rigidbody2D> ().velocity = playerVelocity;
-	}
-		else	{
-			playerVelocity.Set(infectedSpeed, GetComponent.<Rigidbody2D> ().velocity.y);
+	if (virusNumber == 0)	{
+		if (facingLeft)	{
+			playerVelocity.Set(-infectedSpeed, GetComponent.<Rigidbody2D> ().velocity.y);
 			GetComponent.<Rigidbody2D> ().velocity = playerVelocity;
 		}
+			else	{
+				playerVelocity.Set(infectedSpeed, GetComponent.<Rigidbody2D> ().velocity.y);
+				GetComponent.<Rigidbody2D> ().velocity = playerVelocity;
+			}
+	}
+	if (virusNumber == 1)	{
+		jumpHeight = infectedJumpHeight;
+	}
 		
 	Timer();
 }
@@ -134,6 +144,7 @@ function Timer ()	{
 		else	{
 		isInfected = false;
 		infectedDuration = infectedDurationStart;
+		jumpHeight = startJumpHeight;
 		}
 }
 
@@ -179,4 +190,8 @@ function SetAnimator ()	{
 	}
 	
 	animator.runtimeAnimatorController = Instantiate(Resources.Load(animatorToUse, RuntimeAnimatorController));
+}
+
+function SetVirusNumber ()	{
+	virusNumber = virusBehaviour.spriteNumber;
 }

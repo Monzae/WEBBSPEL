@@ -53,16 +53,12 @@
      <Compile Include="Assets\Script\FindPlayerName.js" />
      <Compile Include="Assets\Script\LevelManager.js" />
      <Compile Include="Assets\Script\MatchTime.js" />
-     <Compile Include="Assets\Script\NameChange.js" />
      <Compile Include="Assets\Script\NameSave.js" />
      <Compile Include="Assets\Script\ObjectLabel.js" />
-     <Compile Include="Assets\Script\Player1Behaviour.js" />
-     <Compile Include="Assets\Script\Player2Behaviour.js" />
      <Compile Include="Assets\Script\PlayerBehaviour.js" />
      <Compile Include="Assets\Script\ScoreManager.js" />
      <Compile Include="Assets\Script\ScoreSave.js" />
      <Compile Include="Assets\Script\ScoreWriter.js" />
-     <Compile Include="Assets\Script\SetAnimator.js" />
      <Compile Include="Assets\Script\SetDefaultName.js" />
      <Compile Include="Assets\Script\SetEndScore1.js" />
      <Compile Include="Assets\Script\SetEndScore2.js" />
