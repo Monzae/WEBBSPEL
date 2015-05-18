@@ -14,15 +14,20 @@ private var infectedSpeed : float;
 private var grounded : boolean;
 private var facingLeft : boolean;
 private var playerVelocity : Vector2;
+private var animatorToUse : String;
 private var animator : Animator;
 private var virusBehaviour : VirusBehaviour;
+private var spriteSave : SpriteSave;
 
 function Start () {
 	animator = GetComponent.<Animator> ();
 	virusBehaviour = FindObjectOfType.<VirusBehaviour> ();
+	spriteSave = FindObjectOfType.<SpriteSave> ();
 	
 	infectedDurationStart = infectedDuration;
 	infectedSpeed = moveSpeed * 1.5f;
+	
+	SetAnimator ();
 }
 
 function FixedUpdate ()	{
@@ -140,4 +145,38 @@ function AddVirusPoint ()	{
 	if (playerNumber == 2)	{
 		ScoreWriter.scoreP2 += 5;
 	}
+}
+
+function SetAnimator ()	{
+	if (playerNumber == 1)	{
+		if (spriteSave.spriteNumber1 == 0)	{
+			animatorToUse = "BearAnimator";
+		}
+		
+		if (spriteSave.spriteNumber1 == 1)	{
+			animatorToUse = "BunnyAnimator";
+		}
+		
+		if (spriteSave.spriteNumber1 == 2)	{
+			animatorToUse = "FoxAnimator";
+		}
+	}
+	
+	if (playerNumber == 2)	{
+		Debug.Log(spriteSave.spriteNumber2);
+	
+		if (spriteSave.spriteNumber2 == 0)	{
+			animatorToUse = "BearAnimator";
+		}
+		
+		if (spriteSave.spriteNumber2 == 1)	{
+			animatorToUse = "BunnyAnimator";
+		}
+		
+		if (spriteSave.spriteNumber2 == 2)	{
+			animatorToUse = "FoxAnimator";
+		}
+	}
+	
+	animator.runtimeAnimatorController = Instantiate(Resources.Load(animatorToUse, RuntimeAnimatorController));
 }

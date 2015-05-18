@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2e38d067b6a3cfa47bf0da07fee16bce
-timeCreated: 1430819100
+timeCreated: 1431087122
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,7 @@ TextureImporter:
     21300018: bunnyPinkWalking1
     21300020: bunnyPinkWalking2
     21300022: bunnyPinkWalking3
+    21300024: bunny
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -176,6 +177,16 @@ TextureImporter:
         serializedVersion: 2
         x: 96
         y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bunny
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4dd7b1956fbba0d42bcdbc1e8e2c5505
-timeCreated: 1430819258
+timeCreated: 1431087137
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,7 @@ TextureImporter:
     21300018: foxWalking1
     21300020: foxWalking2
     21300022: foxWalking3
+    21300024: fox
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -176,6 +177,16 @@ TextureImporter:
         serializedVersion: 2
         x: 96
         y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0

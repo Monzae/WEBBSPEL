@@ -3,11 +3,11 @@
 public var guiT : UnityEngine.GUIText;
 public var playerName : String;
 
-private var nameChange : NameChange;
+private var nameChange : NameSave;
 private var playerBehaviour : PlayerBehaviour;
 
 function Start () {
-	nameChange = FindObjectOfType.<NameChange>();
+	nameChange = FindObjectOfType.<NameSave>();
 	playerBehaviour = GetComponentInParent.<PlayerBehaviour>();
 	guiT = GetComponent.<UnityEngine.GUIText>();
 	

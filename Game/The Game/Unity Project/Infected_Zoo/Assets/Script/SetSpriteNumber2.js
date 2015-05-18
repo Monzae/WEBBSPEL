@@ -10,7 +10,6 @@ function Start () {
 }
 
 function Update () {
-	//InputChange ();
 	SpriteNumberCheck ();
 }
 
@@ -30,14 +29,4 @@ function NextSprite ()	{
 
 function PreviousSprite ()	{
 	spriteNumber--;
-}
-
-function InputChange ()	{
-	if (Input.GetKeyDown(KeyCode.A))	{
-		PreviousSprite ();
-	}
-	
-	if (Input.GetKeyDown(KeyCode.D))	{
-		NextSprite ();
-	}
 }
