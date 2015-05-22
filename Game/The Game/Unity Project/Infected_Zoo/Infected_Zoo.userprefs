@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\DeathManager.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ScoreSend.js">
     <Files>
-      <File FileName="Assets\Script\DeathManager.js" Line="22" Column="18" />
+      <File FileName="Assets\Script\ScoreWriter.js" Line="1" Column="1" />
+      <File FileName="Assets\Script\ScoreSend.js" Line="48" Column="1" />
+      <File FileName="Assets\Script\ScoreSave.js" Line="1" Column="1" />
+      <File FileName="Assets\Script\NameSave.js" Line="31" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
