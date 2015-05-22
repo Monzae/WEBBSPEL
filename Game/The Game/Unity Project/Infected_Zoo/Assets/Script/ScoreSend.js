@@ -34,19 +34,29 @@ function SendScore ()	{
 		submitted = true;
 	}
 }
+function ChooseScore()
+{
+if (scoreSave.scorePlayer1 > scoreSave.scorePlayer2)
+	SubmitScorePlayer1();
+	else
+	SubmitScorePlayer2();
+}
 
 function SubmitScorePlayer1 ()	{
-	if (nameSave.namePlayer1 != "")	{
+	if (nameSave.namePlayer1 != null)	{
 		streamWriter.WriteLine(scoreSave.scorePlayer1.ToString() + "," + nameSave.namePlayer1);
+		Debug.Log(nameSave.namePlayer1);
 	}	else{
 		streamWriter.WriteLine(scoreSave.scorePlayer1.ToString() + "," + "Anonymous");
 	}
+	streamWriter.Close();
 }
 
 function SubmitScorePlayer2 ()	{
-	if (nameSave.namePlayer2 != "")	{
+	if (nameSave.namePlayer2 != null)	{
 		streamWriter.WriteLine(scoreSave.scorePlayer2.ToString() + "," + nameSave.namePlayer2);
 	}	else	{
 		streamWriter.WriteLine(scoreSave.scorePlayer2.ToString() + "," + "Anonymous");
 	}
+	streamWriter.Close();
 }
