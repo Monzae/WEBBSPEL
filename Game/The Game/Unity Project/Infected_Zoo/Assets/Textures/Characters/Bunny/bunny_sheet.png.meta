@@ -1,21 +1,22 @@
 fileFormatVersion: 2
 guid: 109fab2fd2335194ebdd07fcb2778b7d
-timeCreated: 1429178578
+timeCreated: 1432108728
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bunny_idle_0
-    21300002: bunny_sheet_0
-    21300004: bunny_sheet_1
-    21300006: bunny_sheet_2
-    21300008: bunny_sheet_3
-    21300010: bunny_sheet_4
-    21300012: bunny_sheet_5
-    21300014: bunny_sheet_6
-    21300016: bunny_sheet_7
-    21300018: bunny_sheet_8
-    21300020: bunny_sheet_9
-    21300022: bunny_sheet_10
+    21300000: bunnyOrangeIdle0
+    21300002: bunnyOrangeIdle1
+    21300004: bunnyOrangeIdle2
+    21300006: bunnyOrangeIdle3
+    21300008: bunnyOrangeJumping0
+    21300010: bunnyOrangeJumping1
+    21300012: bunnyOrangeJumping2
+    21300014: bunnyOrangeJumping3
+    21300016: bunnyOrangeWalking0
+    21300018: bunnyOrangeWalking1
+    21300020: bunnyOrangeWalking2
+    21300022: bunnyOrangeWalking3
+    21300024: bunnyOrange
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,7 +62,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: bunny_idle_0
+    - name: bunnyOrangeIdle0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +72,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_0
+    - name: bunnyOrangeIdle1
       rect:
         serializedVersion: 2
         x: 32
@@ -81,7 +82,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_1
+    - name: bunnyOrangeIdle2
       rect:
         serializedVersion: 2
         x: 64
@@ -91,7 +92,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_2
+    - name: bunnyOrangeIdle3
       rect:
         serializedVersion: 2
         x: 96
@@ -101,7 +102,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_3
+    - name: bunnyOrangeJumping0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,7 +112,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_4
+    - name: bunnyOrangeJumping1
       rect:
         serializedVersion: 2
         x: 32
@@ -121,7 +122,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_5
+    - name: bunnyOrangeJumping2
       rect:
         serializedVersion: 2
         x: 64
@@ -131,7 +132,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_6
+    - name: bunnyOrangeJumping3
       rect:
         serializedVersion: 2
         x: 96
@@ -141,7 +142,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_7
+    - name: bunnyOrangeWalking0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,7 +152,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_8
+    - name: bunnyOrangeWalking1
       rect:
         serializedVersion: 2
         x: 32
@@ -161,7 +162,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_9
+    - name: bunnyOrangeWalking2
       rect:
         serializedVersion: 2
         x: 64
@@ -171,11 +172,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bunny_sheet_10
+    - name: bunnyOrangeWalking3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bunnyOrange
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0

@@ -1,8 +1,9 @@
 ﻿#pragma strict
 
 public var bearSprite : Sprite;
-public var bunnySprite : Sprite;
+public var bunnyPinkSprite : Sprite;
 public var foxSprite : Sprite;
+public var bunnyOrangeSprite : Sprite;
 
 public static var sprites : Sprite[];
 
@@ -11,7 +12,7 @@ private var setSpriteNumber : SetSpriteNumber2;
 function Start () {
 	setSpriteNumber = GetComponentInChildren.<SetSpriteNumber2>();
 	
-	sprites = [bearSprite, bunnySprite, foxSprite];
+	sprites = [bearSprite, bunnyPinkSprite, foxSprite, bunnyOrangeSprite];
 }
 
 function Update () {

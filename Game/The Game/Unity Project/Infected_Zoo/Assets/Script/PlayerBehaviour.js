@@ -54,6 +54,7 @@ function OnTriggerEnter2D(other : Collider2D)	{
 		
 		AddVirusPoint ();
 		SetVirusNumber ();
+		SetInfectedAnimator ();
 	}
 }
 
@@ -145,6 +146,7 @@ function Timer ()	{
 		isInfected = false;
 		infectedDuration = infectedDurationStart;
 		jumpHeight = startJumpHeight;
+		SetAnimator ();
 		}
 }
 
@@ -158,34 +160,80 @@ function AddVirusPoint ()	{
 	}
 }
 
-function SetAnimator ()	{
+public function SetAnimator ()	{
 	if (playerNumber == 1)	{
 		if (spriteSave.spriteNumber1 == 0)	{
 			animatorToUse = "BearAnimator";
 		}
 		
 		if (spriteSave.spriteNumber1 == 1)	{
-			animatorToUse = "BunnyAnimator";
+			animatorToUse = "BunnyPinkAnimator";
 		}
 		
 		if (spriteSave.spriteNumber1 == 2)	{
 			animatorToUse = "FoxAnimator";
 		}
+		
+		if (spriteSave.spriteNumber1 == 3)	{
+			animatorToUse = "BunnyOrangeAnimator";
+		}
 	}
 	
 	if (playerNumber == 2)	{
-		Debug.Log(spriteSave.spriteNumber2);
-	
 		if (spriteSave.spriteNumber2 == 0)	{
 			animatorToUse = "BearAnimator";
 		}
 		
 		if (spriteSave.spriteNumber2 == 1)	{
-			animatorToUse = "BunnyAnimator";
+			animatorToUse = "BunnyPinkAnimator";
 		}
 		
 		if (spriteSave.spriteNumber2 == 2)	{
 			animatorToUse = "FoxAnimator";
+		}
+		
+		if (spriteSave.spriteNumber2 == 3)	{
+			animatorToUse = "BunnyOrangeAnimator";
+		}
+	}
+	
+	animator.runtimeAnimatorController = Instantiate(Resources.Load(animatorToUse, RuntimeAnimatorController));
+}
+
+function SetInfectedAnimator ()	{
+	if (playerNumber == 1)	{
+		if (spriteSave.spriteNumber1 == 0)	{
+			animatorToUse = "BearInfectedAnimator";
+		}
+		
+		if (spriteSave.spriteNumber1 == 1)	{
+			animatorToUse = "BunnyPinkInfectedAnimator";
+		}
+		
+		if (spriteSave.spriteNumber1 == 2)	{
+			animatorToUse = "FoxInfectedAnimator";
+		}
+		
+		if (spriteSave.spriteNumber1 == 3)	{
+			animatorToUse = "BunnyOrangeInfectedAnimator";
+		}
+	}
+	
+	if (playerNumber == 2)	{	
+		if (spriteSave.spriteNumber2 == 0)	{
+			animatorToUse = "BearInfectedAnimator";
+		}
+		
+		if (spriteSave.spriteNumber2 == 1)	{
+			animatorToUse = "BunnyPinkInfectedAnimator";
+		}
+		
+		if (spriteSave.spriteNumber2 == 2)	{
+			animatorToUse = "FoxInfectedAnimator";
+		}
+		
+		if (spriteSave.spriteNumber2 == 3)	{
+			animatorToUse = "BunnyOrangeInfectedAnimator";
 		}
 	}
 	

@@ -38,6 +38,7 @@ public function RespawnPlayer() {
 	Immortality(secondsToWait);
 	
 	playerBehaviour.isInfected = false;
+	playerBehaviour.SetAnimator();
 }
 
 function RandomSpawn()	{

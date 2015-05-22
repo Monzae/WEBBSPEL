@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PlayerBehaviour.js">
     <Files>
-      <File FileName="Assets\Script\VirusBehaviour.js" Line="47" Column="1" />
-      <File FileName="Assets\Script\PlayerBehaviour.js" Line="196" Column="24" />
-      <File FileName="Assets\Script\DeathManager.js" Line="45" Column="51" />
+      <File FileName="Assets\Script\ScoreSend.js" Line="24" Column="34" />
+      <File FileName="Assets\Script\PlayerBehaviour.js" Line="228" Column="30" />
+      <File FileName="Assets\Script\DeathManager.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

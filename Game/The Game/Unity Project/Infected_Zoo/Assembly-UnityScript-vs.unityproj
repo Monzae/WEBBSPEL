@@ -56,8 +56,10 @@
      <Compile Include="Assets\Script\NameSave.js" />
      <Compile Include="Assets\Script\ObjectLabel.js" />
      <Compile Include="Assets\Script\PlayerBehaviour.js" />
+     <Compile Include="Assets\Script\ScoreCheck.js" />
      <Compile Include="Assets\Script\ScoreManager.js" />
      <Compile Include="Assets\Script\ScoreSave.js" />
+     <Compile Include="Assets\Script\ScoreSend.js" />
      <Compile Include="Assets\Script\ScoreWriter.js" />
      <Compile Include="Assets\Script\SetDefaultName.js" />
      <Compile Include="Assets\Script\SetEndScore1.js" />
