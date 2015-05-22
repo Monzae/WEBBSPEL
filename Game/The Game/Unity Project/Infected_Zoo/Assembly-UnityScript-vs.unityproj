@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -53,14 +53,18 @@
      <Compile Include="Assets\Script\FindPlayerName.js" />
      <Compile Include="Assets\Script\LevelManager.js" />
      <Compile Include="Assets\Script\MatchTime.js" />
+     <Compile Include="Assets\Script\NameChange.js" />
      <Compile Include="Assets\Script\NameSave.js" />
      <Compile Include="Assets\Script\ObjectLabel.js" />
+     <Compile Include="Assets\Script\Player1Behaviour.js" />
+     <Compile Include="Assets\Script\Player2Behaviour.js" />
      <Compile Include="Assets\Script\PlayerBehaviour.js" />
      <Compile Include="Assets\Script\ScoreCheck.js" />
      <Compile Include="Assets\Script\ScoreManager.js" />
      <Compile Include="Assets\Script\ScoreSave.js" />
      <Compile Include="Assets\Script\ScoreSend.js" />
      <Compile Include="Assets\Script\ScoreWriter.js" />
+     <Compile Include="Assets\Script\SetAnimator.js" />
      <Compile Include="Assets\Script\SetDefaultName.js" />
      <Compile Include="Assets\Script\SetEndScore1.js" />
      <Compile Include="Assets\Script\SetEndScore2.js" />
@@ -71,7 +75,7 @@
      <Compile Include="Assets\Script\VirusBehaviour.js" />
      <Compile Include="Assets\Script\VirusText.js" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,7 +19,7 @@ function Start () {
 	
 	secondsToBlink = secondsToWait / 10;
 	playerVelocity.Set(0, 0);
-	
+	if( renderParent !=null)
 	BlinkingTexture ();
 }
 
